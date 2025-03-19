@@ -32,10 +32,17 @@ header img {
     max-width: 90px;
 }
 
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
 nav ul {
     display: flex;
     list-style: none;
     gap: 15px;
+    align-items: center;
 }
 
 nav ul li {
@@ -69,6 +76,28 @@ nav a:hover::after {
 
 nav a:hover {
     color: #FFD1C4;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+    }
+    nav {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
 }
 
 /* Hero Section */
