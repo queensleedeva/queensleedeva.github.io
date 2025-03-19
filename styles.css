@@ -29,7 +29,8 @@ header {
 }
 
 header img {
-    max-width: 70px; height: auto;
+    max-width: 70px;
+    height: auto;
 }
 
 nav {
@@ -45,7 +46,6 @@ nav ul {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-}
 }
 
 nav ul li {
@@ -83,7 +83,7 @@ nav a:hover {
 }
 
 /* Responsive Menu */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     header {
         flex-direction: column;
         height: auto;
@@ -94,13 +94,24 @@ nav a:hover {
         margin-top: 10px;
     }
     nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
         flex-direction: column;
+        padding: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
         gap: 10px;
     }
     nav a {
         display: block;
         padding: 10px;
-        text-align: center;
     }
 }
 
